@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "WhatsApp Custom Wallpaper",
+  "version": "1.0",
+  "description": "Replaces the chat background with wallpaper.jpg from this folder.",
+  "content_scripts": [
+    {
+      "matches": ["https://web.whatsapp.com/*"],
+      "css": ["wallpaper.css"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["wallpaper.jpg"],
+      "matches": ["https://web.whatsapp.com/*"]
+    }
+  ]
+}

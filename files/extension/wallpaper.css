@@ -1,0 +1,14 @@
+/* Paint the image behind the open conversation */
+#main {
+  background-image: url("chrome-extension://__MSG_@@extension_id__/wallpaper.jpg") !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+/* Hide WhatsApp's own doodle/colour layer so the image shows through */
+#main [data-asset-chat-background-light],
+#main [data-asset-chat-background-dark] {
+  background-image: none !important;
+  background-color: transparent !important;
+  opacity: 0 !important;
+}
