@@ -62,3 +62,7 @@ Remove-ItemProperty 'HKCU:\Software\Policies\Microsoft\Edge\WebView2\AdditionalB
 ## License
 
 [MIT](LICENSE)
+
+---
+
+<sub>Freshly baked by [Tweakery](https://github.com/Tweakery) 🥐</sub>
